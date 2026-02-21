@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>斐亞文化藝術 Chorphilia 演出資訊</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Microsoft JhengHei", sans-serif;
+    background: linear-gradient(135deg, #1c2a4a, #2e3d73);
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px 30px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    color: #333;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #2e3d73;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #1c2a4a;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    opacity: 0.7;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>斐亞文化藝術 Chorphilia 演出資訊</h1>
+</header>
+
+<div class="container">
+
+    <!-- 活動 1 -->
+    <div class="card">
+        <img src="images/twelve-nights.jpg" alt="胡志龍的十二夜">
+        <div class="card-content">
+            <h2>胡志龍的十二夜</h2>
+            <p>Twelve Nights – Chih-long HU 2026 Piano Recitals</p>
+            <a class="button" href="https://www.opentix.life/event/2009557730338074625" target="_blank">
+                立即購票
+            </a>
+        </div>
+    </div>
+
+    <!-- 活動 2 -->
+    <div class="card">
+        <img src="images/path-of-life.jpg" alt="生命的軌跡">
+        <div class="card-content">
+            <h2>生命的軌跡 Path of Life</h2>
+            <p>2026 林鈺音鋼琴獨奏會</p>
+            <a class="button" href="https://www.opentix.life/event/2011269109732937728" target="_blank">
+                立即購票
+            </a>
+        </div>
+    </div>
+
+    <!-- 活動 3 -->
+    <div class="card">
+        <img src="images/dharma-song.jpg" alt="妙法之歌">
+        <div class="card-content">
+            <h2>妙法之歌 & 鋼琴協奏之旅</h2>
+            <a class="button" href="https://www.opentix.life/event/2012854119319642113" target="_blank">
+                立即購票
+            </a>
+        </div>
+    </div>
+
+    <!-- 活動 4 -->
+    <div class="card">
+        <img src="images/trombone.jpg" alt="長號音樂會">
+        <div class="card-content">
+            <h2>音緣際會</h2>
+            <p>Sam Armstrong x Huang Shao Wei Trombone Concert</p>
+            <a class="button" href="https://www.opentix.life/event/2017506956858097665" target="_blank">
+                立即購票
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+© 2026 Chorphilia 斐亞文化藝術
+</footer>
+
+</body>
+</html>
