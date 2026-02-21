@@ -1,0 +1,76 @@
+import { Music } from "lucide-react";
+import EventCard from "@/components/EventCard";
+import eventTwelveNights from "@/assets/event-twelve-nights.jpg";
+import eventPathOfLife from "@/assets/event-path-of-life.jpg";
+import eventMysticSong from "@/assets/event-mystic-song.jpg";
+import eventTrombone from "@/assets/event-trombone.jpg";
+
+const events = [
+  {
+    titleZh: "胡志龍的十二夜",
+    titleEn: "Twelve Nights – Chih-long HU 2026 Piano Recitals",
+    ticketUrl: "https://www.opentix.life/event/2009557730338074625",
+    image: eventTwelveNights,
+  },
+  {
+    titleZh: "生命的軌跡 Path of Life – 2026 林鈺音鋼琴獨奏會",
+    titleEn: "Path of Life – 2026 Yu-Yin LIN Piano Recital",
+    ticketUrl: "https://www.opentix.life/event/2011269109732937728",
+    image: eventPathOfLife,
+  },
+  {
+    titleZh: "妙法之歌 & 鋼琴協奏之旅",
+    titleEn: "Sacred Songs & Piano Concerto Journey",
+    ticketUrl: "https://www.opentix.life/event/2012854119319642113",
+    image: eventMysticSong,
+  },
+  {
+    titleZh: "音緣際會　Sam Armstrong x Huang Shao Wei 長號音樂會",
+    titleEn: "Sam Armstrong x Huang Shao Wei Trombone Concert",
+    ticketUrl: "https://www.opentix.life/event/2017506956858097665",
+    image: eventTrombone,
+    imageClassName: "object-top",
+  },
+];
+
+const Index = () => {
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Header */}
+      <header className="relative py-16 px-6 text-center overflow-hidden">
+        <div className="absolute inset-0 gradient-main opacity-10" />
+        <div className="relative z-10 max-w-3xl mx-auto">
+          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-border bg-muted/50">
+            <Music className="h-4 w-4 text-primary" />
+            <span className="text-sm text-muted-foreground">演出資訊 Concert Info</span>
+          </div>
+          <h1 className="font-serif text-4xl md:text-5xl font-bold gradient-text mb-3">
+            斐亞文化藝術
+          </h1>
+          <p className="text-lg text-secondary font-serif tracking-widest">
+            Chorphilia
+          </p>
+          <div className="mt-6 h-px w-32 mx-auto gradient-main" />
+        </div>
+      </header>
+
+      {/* Events Grid */}
+      <main className="max-w-5xl mx-auto px-6 pb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {events.map((event) => (
+            <EventCard key={event.ticketUrl} {...event} />
+          ))}
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="text-center py-8 border-t border-border">
+        <p className="text-sm text-muted-foreground">
+          © 2026 斐亞文化藝術 Chorphilia
+        </p>
+      </footer>
+    </div>
+  );
+};
+
+export default Index;
